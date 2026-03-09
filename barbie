@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Barbie Dream Career World</title>
+
+<style>
+body{
+font-family: Arial, sans-serif;
+background: linear-gradient(#ffb6d9,#fff);
+text-align:center;
+margin:0;
+}
+
+header{
+background:#ff4fa3;
+color:white;
+padding:20px;
+font-size:32px;
+font-weight:bold;
+}
+
+h2{
+color:#ff2f92;
+}
+
+.container{
+padding:30px;
+}
+
+.career-buttons{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+margin-top:20px;
+}
+
+button{
+background:#ff4fa3;
+color:white;
+border:none;
+padding:15px 25px;
+font-size:18px;
+border-radius:10px;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+background:#ff2f92;
+transform:scale(1.1);
+}
+
+.card{
+display:none;
+margin-top:30px;
+padding:20px;
+background:white;
+border-radius:12px;
+width:60%;
+margin-left:auto;
+margin-right:auto;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+footer{
+margin-top:40px;
+padding:20px;
+font-size:14px;
+color:#555;
+}
+</style>
+
+<script>
+function showCareer(career){
+document.querySelectorAll(".card").forEach(c => c.style.display="none");
+document.getElementById(career).style.display="block";
+}
+</script>
+
+</head>
+
+<body>
+
+<header>
+✨ Barbie Dream Career World ✨
+</header>
+
+<div class="container">
+
+<h2>Choose Your Dream Career!</h2>
+<p>Barbie can be anything. What will you be today?</p>
+
+<div class="career-buttons">
+<button onclick="showCareer('doctor')">👩‍⚕️ Doctor</button>
+<button onclick="showCareer('astronaut')">👩‍🚀 Astronaut</button>
+<button onclick="showCareer('teacher')">👩‍🏫 Teacher</button>
+<button onclick="showCareer('vet')">🐾 Veterinarian</button>
+</div>
+
+<div id="doctor" class="card">
+<h3>Doctor Barbie</h3>
+<p>Doctors help people stay healthy and save lives.</p>
+<p><b>Mini Challenge:</b> Can you name 3 things doctors use at work?</p>
+</div>
+
+<div id="astronaut" class="card">
+<h3>Astronaut Barbie</h3>
+<p>Astronauts explore space and discover new things about our universe.</p>
+<p><b>Mini Challenge:</b> Would you visit the Moon or Mars first?</p>
+</div>
+
+<div id="teacher" class="card">
+<h3>Teacher Barbie</h3>
+<p>Teachers help kids learn and grow every day.</p>
+<p><b>Mini Challenge:</b> What is your favorite subject in school?</p>
+</div>
+
+<div id="vet" class="card">
+<h3>Veterinarian Barbie</h3>
+<p>Vets help animals stay healthy and happy.</p>
+<p><b>Mini Challenge:</b> What animal would you love to help?</p>
+</div>
+
+</div>
+
+<footer>
+Dream it. Try it. Be it with Barbie.
+</footer>
+
+</body>
+</html>
